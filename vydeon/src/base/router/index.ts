@@ -28,18 +28,11 @@ export default (modulesConfig: ModulesConfig) => {
       props: { defaultRoute },
     });
   }
-  routes.push({
-    path: "/logout",
-    name: "Logout",
-    redirect: () => {
-      return { name: "Logout" };
-    },
-  });
+
   const router = createRouter({
     history: createWebHistory(),
     routes,
   });
- 
 
   return router;
 };
