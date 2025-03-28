@@ -1,5 +1,5 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import base from './base'
 
-createApp(App).mount('#app')
+base().then((app) => {
+  app?.mount('#app')
+})
