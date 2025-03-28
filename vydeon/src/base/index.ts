@@ -4,7 +4,8 @@ import App from "./App.vue";
 import router from "./router";
 import modulesSetup from "./setup/modules";
 
-import getErrorMessage from "./functions/erros";
+import "@/assets/main.css";
+import getErrorMessage from "@/base/functions/erros";
 
 export default async () => {
   try {
@@ -17,6 +18,6 @@ export default async () => {
 
     return app;
   } catch (error) {
-    console.error(`Failed to create app: ${getErrorMessage(error)}`)
+    console.error(`Failed to create app: ${getErrorMessage(error)}`);
   }
 };

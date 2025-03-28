@@ -1,1 +1,1 @@
-<template>Teste</template>
+<template>Estou na home</template>
